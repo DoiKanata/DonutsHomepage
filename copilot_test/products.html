@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品一覧 | Donuts & Drinks</title>
+    <link rel="stylesheet" href="donuts.css">
+</head>
+
+<body>
+    <header>
+        <h1>商品一覧</h1>
+        <nav>
+            <ul>
+                <li><a href="donuts.html">トップページ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="menu-section fade-in">
+            <h2>ドーナツ</h2>
+            <div class="menu-grid">
+                <div class="menu-item" data-name="dewnut" data-price="¥220" data-img="donuts.jpg" data-type="donut"
+                    data-desc="classic">
+                    <img src="images/dewnut.jpeg" alt="dewnut">
+                    <h3>dewnut</h3>
+                    <p>ふんわり生地と優しい甘さ</p>
+                    <div class="price">¥220</div>
+                </div>
+                <div class="menu-item" data-name="カカオ" data-price="¥260" data-img="chocolate-glaze.jpg"
+                    data-type="donut" data-desc="choco">
+                    <img src="images/cacao.jpg" alt="カカオ">
+                    <h3>カカオ</h3>
+                    <p>濃厚チョコとサクサク食感</p>
+                    <div class="price">¥260</div>
+                </div>
+                <div class="menu-item" data-name="生いちご" data-price="¥280" data-img="strawberry-glaze.jpg"
+                    data-type="donut" data-desc="strawberry">
+                    <img src="images/strawberry.png" alt="生いちご">
+                    <h3>生いちご</h3>
+                    <p>甘酸っぱい苺グレーズ</p>
+                    <div class="price">¥280</div>
+                </div>
+                <div class="menu-item" data-name="黒糖" data-price="¥250" data-img="cinnamon-sugar.jpg" data-type="donut">
+                    <img src="images/blownsugar.jpg" alt="黒糖">
+                    <h3>黒糖</h3>
+                    <p>コクのある黒糖の甘み</p>
+                    <div class="price">¥250</div>
+                </div>
+                <div class="menu-item" data-name="抹茶" data-price="¥280" data-img="matcha-glaze.jpg" data-type="donut"
+                    data-desc="matcha">
+                    <img src="images/macha.jpg" alt="抹茶">
+                    <h3>抹茶</h3>
+                    <p>宇治抹茶の香りとほろ苦さ</p>
+                    <div class="price">¥280</div>
+                </div>
+                <div class="menu-item" data-name="ホワイトクリーム" data-price="¥320" data-img="cream.jpg" data-type="donut">
+                    <img src="images/cream.jpg" alt="ホワイトクリーム">
+                    <h3>ホワイトクリーム</h3>
+                    <p>なめらかクリームたっぷり</p>
+                    <div class="price">¥320</div>
+                </div>
+                <div class="menu-item" data-name="カスタードクリーム" data-price="¥320" data-img="custard.jpg" data-type="donut">
+                    <img src="images/custard.jpg" alt="カスタードクリーム">
+                    <h3>カスタードクリーム</h3>
+                    <p>濃厚カスタードとブルーベリー</p>
+                    <div class="price">¥320</div>
+                </div>
+                <div class="menu-item" data-name="クッキークリーム" data-price="¥320" data-img="cookie_and_cream.jpg"
+                    data-type="donut">
+                    <img src="images/cookieCream.jpg" alt="クッキークリーム">
+                    <h3>クッキークリーム</h3>
+                    <p>バニラとクッキーの贅沢</p>
+                    <div class="price">¥320</div>
+                </div>
+                <div class="menu-item" data-name="あずきバター" data-price="¥300" data-img="anbutter.jpg" data-type="donut">
+                    <img src="images/anbutter.jpg" alt="あずきバター">
+                    <h3>あずきバター</h3>
+                    <p>和の甘さとバターのコク</p>
+                    <div class="price">¥300</div>
+                </div>
+                <div class="menu-item" data-name="ミックスナッツ" data-price="¥290" data-img="mixnuts.jpg" data-type="donut">
+                    <img src="images/mixnuts.jpg" alt="ミックスナッツ">
+                    <h3>ミックスナッツ</h3>
+                    <p>香ばしいナッツたっぷり</p>
+                    <div class="price">¥290</div>
+                </div>
+            </div>
+            <h2>ドリンク</h2>
+            <div class="menu-grid">
+                <div class="menu-item" data-name="コーヒー" data-price="¥300" data-img="coffee.jpg" data-type="drink">
+                    <img src="images/coffee.jpg" alt="コーヒー">
+                    <h3>コーヒー</h3>
+                    <p>香り高い自家焙煎</p>
+                    <div class="price">¥300</div>
+                </div>
+                <div class="menu-item" data-name="カフェオレ" data-price="¥350" data-img="cafe-latte.jpg" data-type="drink"
+                    data-desc="latte">
+                    <img src="images/cafe-latte.jpg" alt="カフェオレ">
+                    <h3>カフェオレ</h3>
+                    <p>ミルクたっぷりのカフェラテ</p>
+                    <div class="price">¥350</div>
+                </div>
+                <div class="menu-item" data-name="紅茶" data-price="¥300" data-img="tea.jpg" data-type="drink">
+                    <img src="images/tea.jpg" alt="紅茶">
+                    <h3>紅茶</h3>
+                    <p>香り豊かなダージリン</p>
+                    <div class="price">¥300</div>
+                </div>
+                <div class="menu-item" data-name="抹茶ラテ" data-price="¥400" data-img="matcha-latte.jpg" data-type="drink">
+                    <img src="images/matcha-latte.jpg" alt="抹茶ラテ">
+                    <h3>抹茶ラテ</h3>
+                    <p>抹茶とミルクの絶妙なバランス</p>
+                    <div class="price">¥400</div>
+                </div>
+                <div class="menu-item" data-name="オレンジジュース" data-price="¥250" data-img="orange-juice.jpg"
+                    data-type="drink">
+                    <img src="images/orange-juice.jpg" alt="オレンジジュース">
+                    <h3>オレンジジュース</h3>
+                    <p>フレッシュな果実感</p>
+                    <div class="price">¥250</div>
+                </div>
+                <div class="menu-item" data-name="生フルーツティー" data-price="¥550" data-img="seasonal-drink.jpg"
+                    data-type="drink">
+                    <img src="images/seasonal-drink.jpg" alt="生フルーツティー">
+                    <h3>生フルーツティー</h3>
+                    <p>季節のフルーツたっぷり</p>
+                    <div class="price">¥550</div>
+                </div>
+                <div class="menu-item" data-name="レモネード" data-price="¥320" data-img="lemonade.jpg" data-type="drink">
+                    <img src="images/lemonade.jpg" alt="レモネード">
+                    <h3>レモネード</h3>
+                    <p>爽やかなレモンの香り</p>
+                    <div class="price">¥320</div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-section fade-in" id="gallery">
+            <h2>ギャラリー</h2>
+            <div class="gallery-grid">
+                <img src="images/gallery1.jpg" alt="店内の雰囲気" class="gallery-img">
+                <img src="images/gallery2.jpg" alt="ドーナツ盛り付け例" class="gallery-img">
+                <img src="images/gallery3.jpg" alt="カフェラテとドーナツ" class="gallery-img">
+                <img src="images/gallery4.jpg" alt="季節限定メニュー" class="gallery-img">
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Dewnuts. All Rights Reserved.
+    </footer>
+    <script src="donuts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Quicksand:wght@400;600&display=swap');
+
+body {
+    font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
+    background: linear-gradient(135deg, #fff6f0 0%, #ffe5ec 100%);
+    color: #4b2e2b;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(90deg, #fff 60%, #ffe5ec 100%);
+    color: #e07a5f;
+    padding: 3rem 0 2rem 0;
+    text-align: center;
+    box-shadow: 0 6px 24px rgba(224, 122, 95, 0.08);
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    margin: 0;
+    letter-spacing: 0.12em;
+    color: #e07a5f;
+    text-shadow: 0 2px 8px #fff2;
+}
+
+header p {
+    font-size: 1.3rem;
+    color: #b5838d;
+    margin: 1rem 0 0 0;
+    letter-spacing: 0.05em;
+}
+
+nav {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-flex;
+    gap: 2.5rem;
+    background: #fff8f0cc;
+    border-radius: 50px;
+    box-shadow: 0 2px 12px #e07a5f22;
+    padding: 0.7rem 2.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e07a5f;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color 0.2s;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: 2px;
+    background: #e07a5f;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+main {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.hero {
+    width: 100%;
+    min-height: 350px;
+    background: linear-gradient(120deg, #ffe5ec 60%, #fff6f0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1rem 2rem 1rem;
+    position: relative;
+}
+
+.hero img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 32px #e07a5f33;
+    border: 6px solid #fff;
+    margin-bottom: 1.5rem;
+}
+
+.hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2rem;
+    color: #e07a5f;
+    margin: 0 0 0.5rem 0;
+}
+
+.hero p {
+    color: #b5838d;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.menu-section {
+    margin: 3rem 0 2rem 0;
+}
+
+.menu-section h2 {
+    color: #e07a5f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+.menu-item {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 6px 24px #e07a5f22;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    text-align: center;
+    width: 240px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.menu-item:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 12px 32px #e07a5f33;
+}
+
+.menu-item img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px #e07a5f22;
+    margin-bottom: 1rem;
+    background: #ffe5ec;
+}
+
+.menu-item h3 {
+    font-size: 1.2rem;
+    color: #e07a5f;
+    margin: 0.5rem 0 0.2rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-item p {
+    color: #4b2e2b;
+    font-size: 1rem;
+    margin: 0.2rem 0 0 0;
+}
+
+.menu-item .price {
+    color: #b5838d;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.image-gallery-section {
+    margin: 4rem 0 2rem 0;
+}
+
+.image-gallery-section h2 {
+    color: #e07a5f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin: 0 0 2rem 0;
+    justify-items: center;
+}
+
+.image-gallery img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 6px 24px #e07a5f22;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: #ffe5ec;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.07) rotate(-2deg);
+    box-shadow: 0 12px 32px #e07a5f33;
+}
+
+.gallery-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.gallery-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+.sns-section {
+    background: linear-gradient(90deg, #fff 60%, #ffe5ec 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 16px #e07a5f22;
+    padding: 2.5rem 1rem;
+    margin: 3rem auto 2rem auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+.sns-section h2 {
+    color: #e07a5f;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.sns-links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 1rem;
+}
+
+.sns-links a {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 8px #e07a5f22;
+    transition: box-shadow 0.2s, transform 0.2s;
+    overflow: hidden;
+}
+
+.sns-links a:hover {
+    box-shadow: 0 6px 24px #e07a5f33;
+    transform: scale(1.1);
+}
+
+.sns-links img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 2.5rem 0 1.5rem 0;
+    background: linear-gradient(90deg, #ffe5ec 0%, #fff6f0 100%);
+    color: #b5838d;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    border-top: 2px solid #ffe5ec;
+    margin-top: 4rem;
+}
+
+/* ボタンデザイン */
+.button-main {
+    background: linear-gradient(90deg, #e07a5f 60%, #f7cac9 100%);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 0.9rem 2.5rem;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    box-shadow: 0 4px 16px #e07a5f22;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 1.2rem;
+}
+
+.button-main:hover {
+    background: linear-gradient(90deg, #f7cac9 0%, #e07a5f 100%);
+    transform: scale(1.05);
+}
+
+/* アニメーション */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s, transform 0.8s;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* キャラクター行 */
+.character-row {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.dewnuts-chara {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.dewnuts-chara:hover {
+    transform: scale(1.08) rotate(-3deg);
+}
+
+.chara-label {
+    font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
+    font-size: 1.1rem;
+    color: #e07a5f;
+    margin-top: 0.5rem;
+    letter-spacing: 0.08em;
+}
+
+/* レスポンシブ */
+@media (max-width: 900px) {
+    .menu-grid {
+        gap: 1.2rem;
+    }
+
+    .menu-item {
+        width: 45vw;
+        min-width: 180px;
+        max-width: 320px;
+    }
+
+    .image-gallery img {
+        width: 38vw;
+        height: 38vw;
+        min-width: 120px;
+        min-height: 120px;
+        max-width: 220px;
+        max-height: 220px;
+    }
+
+    .gallery-img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.1rem;
+    }
+
+    .hero img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .menu-item {
+        width: 90vw;
+        min-width: 120px;
+        max-width: 98vw;
+        padding: 1.2rem 0.5rem 1rem 0.5rem;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .image-gallery img {
+        width: 44vw;
+        height: 44vw;
+        min-width: 80px;
+        min-height: 80px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 12px;
+        margin-top: 12px;
+    }
+
+    .sns-links {
+        gap: 1.2rem;
+    }
+
+    .sns-links a {
+        width: 44px;
+        height: 44px;
+    }
+
+    .character-row {
+        gap: 1rem;
+    }
+
+    .dewnuts-chara svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .chara-label {
+        font-size: 0.9rem;
+    }
+}

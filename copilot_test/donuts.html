@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dewnuts</title>
+    <link rel="stylesheet" href="donuts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <header>
+        <h1>Dewnuts</h1>
+        <p>Dewnuts：「 New ✕ Donuts」<br>
+            「ドーナツの常識を覆す」をコンセプトにしております。<br>
+            素敵なドーナツ体験をどうぞお楽しみください。</p>
+        <nav>
+            <ul>
+                <li><a href="products.html" class="active">商品一覧</a></li>
+                <li><a href="products.html#gallery">ギャラリー</a></li>
+                <li><a href="#sns">SNS</a></li>
+                <li><a href="#access">アクセス</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero fade-in">
+            <img src="images/hero-donut.jpg" alt="おしゃれなドーナツ">
+            <h2>新体験のドーナツとドリンク</h2>
+            <p>ふんわり、かわいい、そしてとびきりおいしい。<br>毎日がちょっと特別になる時間を。</p>
+            <button class="button-main" onclick="location.href='products.html'">商品一覧を見る</button>
+            <div class="character-row">
+                <!-- ドーナツうさぎ -->
+                <div class="dewnuts-chara">
+                    <svg width="90" height="90" viewBox="0 0 90 90">
+                        <ellipse cx="45" cy="55" rx="28" ry="25" fill="#ffe5ec" stroke="#e07a5f" stroke-width="3" />
+                        <ellipse cx="32" cy="25" rx="7" ry="18" fill="#fff6f0" stroke="#e07a5f" stroke-width="2" />
+                        <ellipse cx="58" cy="25" rx="7" ry="18" fill="#fff6f0" stroke="#e07a5f" stroke-width="2" />
+                        <ellipse cx="45" cy="55" rx="13" ry="10" fill="#fff" />
+                        <circle cx="38" cy="50" r="2.5" fill="#e07a5f" />
+                        <circle cx="52" cy="50" r="2.5" fill="#e07a5f" />
+                        <ellipse cx="45" cy="62" rx="5" ry="2" fill="#e07a5f" opacity="0.2" />
+                        <ellipse cx="45" cy="55" rx="4" ry="2.5" fill="#f7cac9" />
+                    </svg>
+                    <div class="chara-label">うさぎ</div>
+                </div>
+                <!-- ドーナツくま -->
+                <div class="dewnuts-chara">
+                    <svg width="90" height="90" viewBox="0 0 90 90">
+                        <ellipse cx="45" cy="55" rx="28" ry="25" fill="#fff6f0" stroke="#e07a5f" stroke-width="3" />
+                        <circle cx="28" cy="38" r="8" fill="#ffe5ec" stroke="#e07a5f" stroke-width="2" />
+                        <circle cx="62" cy="38" r="8" fill="#ffe5ec" stroke="#e07a5f" stroke-width="2" />
+                        <ellipse cx="45" cy="55" rx="13" ry="10" fill="#fff" />
+                        <circle cx="38" cy="50" r="2.5" fill="#e07a5f" />
+                        <circle cx="52" cy="50" r="2.5" fill="#e07a5f" />
+                        <ellipse cx="45" cy="62" rx="5" ry="2" fill="#e07a5f" opacity="0.2" />
+                        <ellipse cx="45" cy="55" rx="4" ry="2.5" fill="#f7cac9" />
+                    </svg>
+                    <div class="chara-label">くま</div>
+                </div>
+                <!-- ドーナツねこ -->
+                <div class="dewnuts-chara">
+                    <svg width="90" height="90" viewBox="0 0 90 90">
+                        <ellipse cx="45" cy="55" rx="28" ry="25" fill="#fff6f0" stroke="#e07a5f" stroke-width="3" />
+                        <polygon points="25,35 35,20 38,38" fill="#ffe5ec" stroke="#e07a5f" stroke-width="2" />
+                        <polygon points="65,20 75,35 62,38" fill="#ffe5ec" stroke="#e07a5f" stroke-width="2" />
+                        <ellipse cx="45" cy="55" rx="13" ry="10" fill="#fff" />
+                        <circle cx="38" cy="50" r="2.5" fill="#e07a5f" />
+                        <circle cx="52" cy="50" r="2.5" fill="#e07a5f" />
+                        <ellipse cx="45" cy="62" rx="5" ry="2" fill="#e07a5f" opacity="0.2" />
+                        <ellipse cx="45" cy="55" rx="4" ry="2.5" fill="#f7cac9" />
+                    </svg>
+                    <div class="chara-label">ねこ</div>
+                </div>
+            </div>
+        </section>
+        <section>
+
+        </section>
+        <section>
+            <a href="products.html#gallery" class="button" style="margin: 24px 0; display: inline-block;">ギャラリーを見る</a>
+        </section>
+        <!-- <section id="menu" class="menu-section fade-in"> ... </section> を削除 -->
+        <section id="sns" class="sns-section fade-in">
+            <h2>公式SNS</h2>
+            <div class="sns-links">
+                <a href="https://www.instagram.com/" title="Instagram"><img src="images/insta-icon.png"
+                        alt="Instagram"></a>
+                <a href="https://twitter.com/" title="X(Twitter)"><img src="images/x-icon.png" alt="X(Twitter)"></a>
+                <a href="https://www.facebook.com/" title="Facebook"><img src="images/fb-icon.png" alt="Facebook"></a>
+            </div>
+        </section>
+        <section id="access" class="fade-in">
+            <h2>アクセス</h2>
+            <ul>
+                <li>東京都渋谷区おしゃれ1-2-3</li>
+                <li>営業時間：10:00-16:00</li>
+                <li>営業日：土・日</li>
+            </ul>
+            <div class="map" style="margin-top:1.5rem;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.9999999999995!2d139.70000000000002!3d35.65999999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b0000000000%3A0x0000000000000000!2z44CSMTUwLTAwMTMg5p2x5Lqs6YO95riL6LC35Yy65p2x5Lqs5Yy65p2x5Lqs!5e0!3m2!1sja!2sjp!4v0000000000000"
+                    width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <div id="popup" class="hidden">
+        <div class="popup-content">
+            <button id="close-popup" class="close-btn" aria-label="閉じる">&times;</button>
+            <img id="popup-img" src="" alt="" />
+            <h3 id="popup-title"></h3>
+            <p id="popup-description"></p>
+            <div id="popup-price"></div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Dewnuts. All Rights Reserved.
+    </footer>
+    <button class="hamburger" id="hamburgerBtn" aria-label="メニュー">
+        <span></span><span></span><span></span>
+    </button>
+    <nav class="menu-tab">
+        <ul>
+            <li><a href="products.html" class="active">商品一覧</a></li>
+            <li><a href="products.html#gallery">ギャラリー</a></li>
+            <li><a href="#sns">SNS</a></li>
+            <li><a href="#access">アクセス</a></li>
+        </ul>
+    </nav>
+    <script src="donuts.js"></script>
+</body>
+
+</html>
