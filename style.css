@@ -346,6 +346,7 @@ footer {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s, transform 0.8s;
+    -webkit-backface-visibility: hidden; /* iOSでのレンダリング問題対策 */
 }
 
 .fade-in.visible {
