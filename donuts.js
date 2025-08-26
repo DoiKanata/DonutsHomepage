@@ -23,14 +23,39 @@ document.addEventListener('DOMContentLoaded', function () {
         // ...必要に応じて追加...
     };
     // --- IntersectionObserverでふわっと表示 ---
-    var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
+    if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // 一度表示したら監視を解除
+                }
+            });
+        }, { threshold: 0.1 }); // 少し早めに検知するように調整
+        sections.forEach(function (section) {
+            observer.observe(section);
         });
-    }, { threshold: 0.2 });
-    sections.forEach(function (section) { return observer.observe(section); });
+    }
+    else {
+        // IntersectionObserverがサポートされていない場合のフォールバック
+        sections.forEach(function (section) {
+            section.classList.add('visible');
+        });
+    }
+
+    // iOSでの表示問題対策としてタッチイベントでも表示を試みる
+    var isIOSTouchApplied = false;
+    function showVisibleOnTouch() {
+        if (isIOSTouchApplied) return;
+        sections.forEach(function (section) {
+            section.classList.add('visible');
+        });
+        isIOSTouchApplied = true;
+        // 一度実行したらイベントリスナーを削除
+        window.removeEventListener('touchstart', showVisibleOnTouch);
+    }
+    window.addEventListener('touchstart', showVisibleOnTouch, { once: true });
+
     // --- メニュークリックでポップアップ ---
     menuItems.forEach(function (item) {
         var isProcessing = false;
@@ -71,7 +96,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // --- メニューリンクのアクティブ切替 ---
     menuLinks.forEach(function (link) {
         link.addEventListener('click', function () {
-            menuLinks.forEach(function (l) { return l.classList.remove('active'); });
+            menuLinks.forEach(function (l) {
+                l.classList.remove('active');
+            });
             link.classList.add('active');
         });
     });
@@ -79,7 +106,9 @@ document.addEventListener('DOMContentLoaded', function () {
     snsLinks.forEach(function (link) {
         link.addEventListener('click', function (e) {
             link.classList.add('clicked');
-            setTimeout(function () { return link.classList.remove('clicked'); }, 300);
+            setTimeout(function () {
+                link.classList.remove('clicked');
+            }, 300);
             link.setAttribute('target', '_blank');
             link.setAttribute('rel', 'noopener noreferrer');
         });
